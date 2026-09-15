@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ShellController : MonoBehaviour
 {
-    public float speed = 100f;
+    public float speed;
     int lifetime = 5;
 
     //private void Start()
