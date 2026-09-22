@@ -17,23 +17,25 @@ public class TankMoveNewInput : MonoBehaviour
     {
         if (Mathf.Abs(move) > 0.1f || Mathf.Abs(rotate) > 0.1f)
         {
+            Debug.Log(1);
             Move();
             Rotate();
         }
         
     }
-    void OnMove(InputValue value)
+     void OnMove(InputValue value)
     { 
         move = value.Get<float>();
     }
 
-    void OnRotate(InputValue value)
+     void OnRotate(InputValue value)
     {
         rotate = value.Get<float>();
     }
 
     void Move()
     {
+  
         Vector3 moveDir = transform.forward * move * moveSpeed * Time.deltaTime;
         rb.MovePosition(rb.position + moveDir);
 
