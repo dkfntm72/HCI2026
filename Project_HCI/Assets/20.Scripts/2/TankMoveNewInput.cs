@@ -15,6 +15,8 @@ public class TankMoveNewInput : MonoBehaviour
     }
     private void Update()
     {
+        Debug.Log(Mathf.Abs(move));
+        Debug.Log(Mathf.Abs(rotate));
         if (Mathf.Abs(move) > 0.1f || Mathf.Abs(rotate) > 0.1f)
         {
             Debug.Log(1);
