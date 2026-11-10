@@ -33,8 +33,8 @@ public class PiaceSphere : MonoBehaviour
 
         GameObject go = Instantiate(spherePrefab, worldPos, Quaternion.identity);
         go.transform.parent = parentTransform;
+
+        GameManager.Instance.ShowMessage("Sphere generated.");
     }
-
-
 
 }
