@@ -10,14 +10,12 @@ public class PlaceCar : MonoBehaviour
     public GameObject marker;
 
     ARRaycastManager arRayManager;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         arRayManager = GetComponent<ARRaycastManager>();
         marker.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
         DetectGround();
@@ -29,7 +27,8 @@ public class PlaceCar : MonoBehaviour
         List<ARRaycastHit> hits = new List<ARRaycastHit>();
         if(arRayManager.Raycast(screenCenter,hits,TrackableType.Planes))
         {
-
+            marker.SetActive(true);
+            marker.transform.position = hits[0].pose.position;
         }
     }
 }
