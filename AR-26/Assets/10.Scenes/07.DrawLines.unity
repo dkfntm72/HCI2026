@@ -604,6 +604,7 @@ GameObject:
   - component: {fileID: 860728881}
   - component: {fileID: 860728880}
   - component: {fileID: 860728882}
+  - component: {fileID: 860728883}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -656,8 +657,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7db0ecd99ef53f47ae9ed44d94bdc44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DrawLines
-  lineSetting: {fileID: 0}
-  arCam: {fileID: 0}
+  lineSetting: {fileID: 11400000, guid: e917100894328014eb40c9231d27812d, type: 2}
+  arCam: {fileID: 287395231}
+--- !u!114 &860728883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860728879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.ARFoundation::UnityEngine.XR.ARFoundation.ARPlaneManager
+  <trackablesChanged>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
+  m_PlanePrefab: {fileID: 7403088681606237144, guid: cc29a8a9378fcbc4387dcef28fc9b193, type: 3}
+  m_DetectionMode: -1
 --- !u!1 &1001985043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1021,7 +1039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DrawButtonCrtl
   drawText: {fileID: 1273168776}
-  drawLines: {fileID: 0}
+  drawLines: {fileID: 860728882}
 --- !u!1 &2055141277
 GameObject:
   m_ObjectHideFlags: 0
