@@ -20,9 +20,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/10.Scenes/06.PlaceCar.unity
     guid: 311b53fbb6afc224681191f6f2de321c
-  - enabled: 1
+  - enabled: 0
     path: Assets/10.Scenes/07.DrawLines.unity
     guid: 5c72acf1b8a7152458c78257239c5f1d
+  - enabled: 0
+    path: Assets/10.Scenes/08.ImageTracking.unity
+    guid: 7ae6351088a0f2145aca54645037c0af
+  - enabled: 0
+    path: Assets/10.Scenes/09.MultipleImageTracking.unity
+    guid: 42d0c4b5930ed5a4f98ba2de2e85397c
+  - enabled: 1
+    path: Assets/10.Scenes/10.FaceMask.unity
+    guid: fe1d4cb39d4c8e9479c8de27664d9f26
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 824f94e794f27ab4fad5d91e108fbb6d, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
